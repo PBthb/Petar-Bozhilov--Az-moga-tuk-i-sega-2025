@@ -1,23 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Az moga tuk i sega</title>
+    <title>Иван Милев | Изкуство, което говори с тишина</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Great+Vibes&family=Oswald:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
 
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Scripts -->
-    <script src="api/server.js" defer></script>
-    <script src="js/main.js" defer></script>
 </head>
+
 <body>
-    
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#exhibition-info">ЗА ИЗЛОЖБАТА</a>
+            <a href="#author-info">ЗА АВТОРА</a>
+        </nav>
+        <div class="logo-container">
+            <a href="#"><img src="assets/logos/ivan-milev-logo-vert.svg" alt="Иван Милев Лого"></a>
+        </div>
+        <nav class="main-nav">
+            <a href="#">НАЧАЛО</a>
+            <a href="#tickets">КУПИ БИЛЕТ</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-collage">
+                <img src="assets/images/image 61-1.png" alt="Painting fragment" class="collage-img" id="img1">
+                <img src="assets/images/image 44.png" alt="Painting fragment" class="collage-img" id="img2">
+                <img src="assets/images/image 45.png" alt="Painting fragment" class="collage-img" id="img3">
+                <img src="assets/images/image 47.png" alt="Painting fragment" class="collage-img" id="img4">
+                <img src="assets/images/image 50.png" alt="Painting fragment" class="collage-img" id="img5">
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="line-one">Изкуство<span class="line-two">, което </span></span>
+                    <span class="line-one"><span class="line-">говори с</span> тишина</span>
+                </h1>
+                <a href="#tickets" class="btn btn-outline">Купи билет</a>
+                <p class="hero-subtext">ИЗЛОЖБА ИВАН МИЛЕВ // 1 ЮЛИ – 12 АВГУСТ 2025 // TATE MODERN, ЛОНДОН</p>
+            </div>
+        </section>
+
+        <section id="exhibition-info" class="info-section content-section">
+            <div class="info-grid">
+                <div class="info-header">
+                    <h2>Защо тази изложба?</h2>
+                    <p class="dates">01.07 <span></span> 12.08</p>
+                    <a href="#tickets" class="btn btn-outline">Купи билет</a>
+                </div>
+                <div class="info-text">
+                    <h3>ЗА ИЗЛОЖБАТА</h3>
+                    <p>„Иван Милев, българският символизъм в сърцето на Лондон“ е първата мащабна международна изложба
+                        на един от най-значимите български художници на 20-ти век.</p>
+                    <p>Тя има за цел да представи Милев като самобитен европейски творец, чието изкуство съчетава
+                        орнаментика, социална чувствителност и мистицизъм.</p>
+                    <p>Посетителите ще открият визуален свят, в който се преплитат фолклор, религия и модернизъм, а
+                        дълбока човешка емоция все още безпокойно актуална и днес.</p>
+                </div>
+            </div>
+        </section>
+        <section id="author-info" class="author-section content-section">
+            <img src="assets/images/image 61.png" alt="Portrait of Ivan Milev" class="author-portrait reveal">
+            <div class="author-text reveal">
+                <h3>КОЙ Е ИВАН МИЛЕВ?</h3>
+                <p>Иван Милев (1897 - 1927) е един от най-ярките представители на българския модернизъм. Роден в
+                    Казанлък, той е представител на така наречения L'art 1900, роден сецесион - приказен и дълбоко
+                    чувствителен, фолклорен и много орнаментален.</p>
+                <p>Творчеството му е повлияно от европейския символизъм и експресионизъм, но остава уникално. Милев
+                    умира едва на 30, но творчеството му оставя трайна следа – като вдъхновение за следващи поколения.
+                </p>
+                <p>Портретът му е на 5-левовата банкнота, което е рядкост и национално самосъзнание. Той успява да
+                    запази духа на следвоенна България – изтерзана и бедна, надявайки се обаче на идентичност. В
+                    неговите първи творби има подчертана социална чувствителност. Но по-късно, под влиянието на немския
+                    модернистичен театър, насочва на въображаема посока. Макар и стилът му да е мек и изящен, той е
+                    наситен с цветове – толкова сигурно, разпознаваемо и дълбоко въздействащо и до днес.</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section content-section">
+            <h2 class="section-title reveal">Какво ще видите?</h2>
+            <p class="section-subtitle reveal">Погледнете в света на Иван Милев – където образите говорят без думи. Тук
+                контурите са израз, цветовете са емоция, а мълчанието му е музика, която звучи в тихата българска
+                страдаща, но винаги горда същност.</p>
+
+            <div id="paintings-grid" class="paintings-grid">
+
+                <p class="loading-message">Loading paintings...</p>
+
+                <div class="painting-card promo-card reveal">
+                    <div class="promo-content">
+                        <h3 class="promo-title">Изкуство, което говори с тишина</h3>
+                        <a href="#tickets" class="btn btn-outline">Купи билет</a>
+                        <div class="promo-logos">
+                            <img src="assets/logos/ivan-milev-logo-hor.svg" alt="Иван Милев Лого">
+                            <img src="assets/logos/logo-77.svg" alt="Tate Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section content-section">
+            <h2 class="reveal">„Милев създава в периферията на Европа, но с централна чувствителност - неговите творби
+                говорят за душата на Балканите със същата сила, с която Климт рисува Виена.“</h2>
+        </section>
+
+        <section id="tickets" class="tickets-section content-section">
+            <div class="tickets-header">
+                <div></div>
+                <h2 class="section-title reveal">Купи билет</h2>
+            </div>
+            <div class="ticket-cards">
+                <div class="ticket-card reveal">
+                    <div class="price-info">
+                        <div class="price">£12</div>
+                        <p class="ticket-type">СТАНДАРТЕН БИЛЕТ</p>
+                    </div>
+                    <a href="#" class="btn btn-light">Купи билет</a>
+                    <div class="ticket-details">
+                        <p><strong>Адрес:</strong> Tate Modern, Bankside, London SE1 9TG</p>
+                        <p><strong>Работно време:</strong> Пон-Нед: 10:00 - 18:00ч.</p>
+                    </div>
+                </div>
+                <div class="ticket-card reveal">
+                    <div class="price-info">
+                        <div class="price">£8</div>
+                        <p class="ticket-type">СТУДЕНТСКИ БИЛЕТ</p>
+                    </div>
+                    <a href="#" class="btn btn-dark">Отстъпка</a>
+                    <div class="ticket-details">
+                        <p><strong>С намаление:</strong> University of the Arts London, Southwark</p>
+                        <p><strong>С валидна карта:</strong> достъпно за всички възрастови групи</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer-section" class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logos">
+                <img src="assets/logos/ivan-milev-logo-hor.svg" alt="Иван Милев Хоризонтално Лого">
+                <img src="assets/logos/logo-77.svg" alt="Tate Logo">
+                <img src="assets/logos/cib logo.svg" alt="CIB Logo">
+                <img src="assets/logos/logo-72.svg" alt="Партньорско Лого 1">
+                <img src="assets/logos/logo-79.svg" alt="Партньорско Лого 2">
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Иван Милев & Tate</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><img src="assets/logos/instagram logo.svg" alt="Instagram"></a>
+                    <a href="#" aria-label="TikTok"><img src="assets/logos/ivan-milev-logo-hor 2.svg" alt="TikTok"></a>
+                    <a href="#" aria-label="YouTube"><img src="assets/logos/ivan-milev-logo-hor 3.svg"
+                            alt="YouTube"></a>
+                </div>
+                <p><a href="mailto:info@ivanmilev-exhibition.com">info@ivanmilev-exhibition.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
 </body>
+
 </html>
